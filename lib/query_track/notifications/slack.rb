@@ -26,30 +26,30 @@ module QueryTrack
       def blocks(trace)
         [
           {
-            "type": 'divider'
+              :"type" => 'divider'
           },
           {
-            "type": 'section',
-            "text": {
-              "type": 'mrkdwn',
-              "text": "```#{code}```"
+              :"type" => 'section',
+              :"text" => {
+                  :"type" => 'mrkdwn',
+                  :"text" => "```#{code}```"
             }
           },
           {
-            "type": 'context',
-            "elements": [
+              :"type" => 'context',
+              :"elements" => [
               {
-                "type": 'mrkdwn',
-                "text": "Duration: *#{duration}s* "
+                  :"type" => 'mrkdwn',
+                  :"text" => "Duration: *#{duration}s* "
               }
             ]
           },
           {
-            "type": 'context',
-            "elements": [
+            "type" => 'context',
+            "elements" => [
               {
-                "type": 'mrkdwn',
-                "text": "#{trace}"
+                "type" => 'mrkdwn',
+                "text" => "#{trace}"
               }
             ]
           }
